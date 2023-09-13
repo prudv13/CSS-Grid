@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin: 5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    width: 89%;
+    gap: 10px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    cursor: pointer;
+
+    .card{
+        transition: tranform 1s;
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+        .info{
+            padding: 1%;
+        }
+
+        img{
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
